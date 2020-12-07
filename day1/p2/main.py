@@ -4,9 +4,10 @@ def main():
 
     for idx, val in enumerate(costs):
         for i in range(idx + 1, len(costs), 1):
-            if val + costs[i] == 2020:
-                print(val, costs[i], val * costs[i])
-                return
+            for j in range(i + 1, len(costs), 1):
+                if val + costs[i] + costs[j] == 2020:
+                    print(val, costs[i], costs[j], val * costs[i] * costs[j])
+                    return
 
 
 if __name__ == "__main__":
