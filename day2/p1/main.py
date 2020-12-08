@@ -11,8 +11,10 @@ def main():
                 valids += 1
     print(valids)
 
-def check_pw(min_count, max_count, letter, pw):
-    return pw.count(letter) >= min_count and pw.count(letter) <= max_count
+
+def check_pw(min_count: int, max_count: int, letter: str, pw: str) -> bool:
+    return min_count <= pw.count(letter) <= max_count
+
 
 if __name__ == '__main__':
     main()
