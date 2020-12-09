@@ -1,5 +1,6 @@
 def main():
-    pass
+    with open("../input.txt", "r") as f:
+        pass
 
 
 if __name__ == "__main__":
